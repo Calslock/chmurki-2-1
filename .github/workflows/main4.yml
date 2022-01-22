@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-push-images:
-    name: Zadanie 2.4 z cachem
+    name: Zadanie 2.4
     runs-on: ubuntu-latest
 
     steps:
@@ -32,5 +32,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: calslock/zad2:image4
-          cache-from: type=registry,ref=calslock/app:buildcache
-          cache-to: type=registry,ref=calslock/app:buildcache,mode=max
+          cache-from: type=registry,ref=calslock/zad2:image4-cache
+          cache-to: type=registry,ref=calslock/zad2:image4-cache,mode=max
