@@ -20,7 +20,7 @@ jak również zadeklarowano docelowe platformy w sekcji Build and Push:
 [Link do zadania Github Actions](https://github.com/Calslock/chmurki-2-1/actions/runs/1732933031)
 Do wykonania zadania 3 wykorzystano plik Dockerfile.v2, w którym zadeklarowano wieloetapowe tworzenie obrazów. Dzięki uprzedniemu wykorzystaniu silnika BuildKit, nie jest konieczna żadna zmiana w pliku yml ([main3.yml](https://github.com/Calslock/chmurki-2-1/blob/master/.github/workflows/main3.yml)).
 ### Zadanie 4
-Do wykonania zadania 4 wykorzystano wbudowaną w build-push-action funkcję cachowania. W sekcji Build and Push zadeklarowano lokalizację przechowywania cachu:
+Do wykonania zadania 4 wykorzystano wbudowaną w build-push-action funkcję cachowania. W sekcji Build and Push w pliku [main4.yml](https://github.com/Calslock/chmurki-2-1/blob/master/.github/workflows/main4.yml) zadeklarowano lokalizację przechowywania cache:
 ```
 cache-from: type=registry,ref=calslock/zad2:image4-cache
 cache-to: type=registry,ref=calslock/zad2:image4-cache,mode=max
