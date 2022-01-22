@@ -32,5 +32,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: calslock/zad2:image4
-          cache-from: type=registry,ref=user/app:buildcache
-          cache-to: type=registry,ref=user/app:buildcache,mode=max
+          cache-from: type=registry,ref=calslock/app:buildcache
+          cache-to: type=registry,ref=calslock/app:buildcache,mode=max
